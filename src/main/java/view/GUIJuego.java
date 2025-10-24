@@ -28,18 +28,13 @@ public class GUIJuego extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        panelTablero1 = new view.PanelTablero();
+        panelControl2 = new view.PanelControl();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(panelTablero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 530, 530));
+        getContentPane().add(panelControl2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 550, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -47,5 +42,11 @@ public class GUIJuego extends javax.swing.JFrame {
  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private view.PanelControl panelControl2;
+    private view.PanelTablero panelTablero1;
     // End of variables declaration//GEN-END:variables
+
+    public Object getPanlTablero() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

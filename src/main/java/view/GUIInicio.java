@@ -4,6 +4,8 @@
  */
 package view;
 
+import view.GUIJuego;
+
 /**
  *
  * @author ellio
@@ -41,6 +43,11 @@ public class GUIInicio extends javax.swing.JFrame {
 
         btnJugar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImágenesProyectoFinal/boton.png"))); // NOI18N
         btnJugar.setContentAreaFilled(false);
+        btnJugar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJugarActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnJugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 230, 90));
 
         btnCreditos.setBackground(new java.awt.Color(29, 47, 93));
@@ -102,6 +109,13 @@ public class GUIInicio extends javax.swing.JFrame {
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void btnJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJugarActionPerformed
+        // TODO add your handling code here:
+        GUIJuego v2 = new GUIJuego();
+        v2.setVisible(true);
+        v2.setLocationRelativeTo(v2);
+    }//GEN-LAST:event_btnJugarActionPerformed
 
   
     // Variables declaration - do not modify//GEN-BEGIN:variables
