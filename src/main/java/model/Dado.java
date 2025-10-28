@@ -11,26 +11,24 @@ import java.util.Random;
  * @author ellio
  */
 public class Dado {
+
     //Atributos 
     private Random random;
     private int numero;
     private CoordenadasHome home;
-    
+
     //Constructor
     public Dado(Random random, int numero) {
         this.random = random;
         this.numero = numero;
     }
-    
+
     //Metodos
-    public int dadosAleatorios(){
-        numero = random.nextInt(6)+1; //minimo el numero  que lleva el + y el maximo el numero ()
-        System.out.println("Sacó:"+numero);
+    public int dadosAleatorios() {
+        numero = random.nextInt(6) + 1; //minimo el numero  que lleva el + y el maximo el numero ()
+        System.out.println("Sacó:" + numero);
         return numero;
-        
-    };
-    
-   
-    
-    
+    }
+;
+
 }//fin del metodo

@@ -9,9 +9,8 @@ package model;
  * @author ellio
  */
 public class TableroCoordenadas {
-    
+
     //Arreglo
-    private int indice;
     private Coordenadas[] recorrido = new Coordenadas[]{
         new Coordenadas(305, 476),//1
         new Coordenadas(305, 454),//2
@@ -81,35 +80,88 @@ public class TableroCoordenadas {
         new Coordenadas(191, 454),//66
         new Coordenadas(191, 477),//67
         new Coordenadas(249, 473),//68 SEGURA
-        
     };
-    
-    private int salidaAmarillo = 5;
-    private int salidaAzul = 22;
-    private int salidaRojo = 39;
-    private int salidaVerde = 56;
 
-    //Metodo obtener las posiciones
-    public Coordenadas getPosicion(int indice) {
-        return recorrido[indice];
-    }//fin del metodo
+    //Falta las coordenadas de caminos win (7 casillas)
+    //[4][7]
+    //No son métodos, son atributos tipo objeto y arreglo
+    private Coordenadas[][] caminoWin = new Coordenadas[][]{
+        //Rojo
+        //Coordenadas inventadas de todos los colores , cambiar
+        {
+            new Coordenadas(250, 39),//1 Zona win Rojo
+            new Coordenadas(250, 62),//2 Zona win Rojo 
+            new Coordenadas(250, 84),//3 Zona win Rojo 
+            new Coordenadas(250, 108),//4 Zona win Rojo 
+            new Coordenadas(250, 132),//5 Zona win Rojo 
+            new Coordenadas(250, 154),//6 Zona win Rojo 
+            new Coordenadas(250, 179),//7 Zona win Rojo 
+        },
+        //Amarillo
+        {
+            new Coordenadas(251, 454),//1 Zona win Amarillo 
+            new Coordenadas(251, 430),//2 Zona win Amarillo 
+            new Coordenadas(251, 409),//3 Zona win Amarillo 
+            new Coordenadas(251, 385),//4 Zona win Amarillo 
+            new Coordenadas(251, 360),//5 Zona win Amarillo 
+            new Coordenadas(251, 338),//6 Zona win Amarillo 
+            new Coordenadas(251, 317),//7 Zona win Amarillo 
+        },
+        //Azul
+        {
+            new Coordenadas(459, 247),//1 Zona win Azul 
+            new Coordenadas(435, 247),//2 Zona win Azul 
+            new Coordenadas(413, 247),//3 Zona win Azul 
+            new Coordenadas(387, 247),//4 Zona win Azul 
+            new Coordenadas(364, 247),//5 Zona win Azul 
+            new Coordenadas(343, 247),//6 Zona win Azul 
+            new Coordenadas(316, 247),//7 Zona win Azul 
+        },
+        //Verde
+        {
+            new Coordenadas(40, 245),//1 Zona win Verde
+            new Coordenadas(67, 245),//2 Zona win Verde
+            new Coordenadas(89, 245),//3 Zona win Verde
+            new Coordenadas(112, 245),//4 Zona win Verde
+            new Coordenadas(135, 245),//5 Zona win Verde
+            new Coordenadas(157, 245),//6 Zona win Verde
+            new Coordenadas(184, 245),//7 Zona win Verde
+        }
+    };
 
-    ;
-    //Metodo para obtenner las casillas
+    private Coordenadas[] metas = new Coordenadas[]{
+        //Coordenadas inventadas, cambiar
+        new Coordenadas(250, 212),//0 Zona win Rojo 
+        new Coordenadas(251, 289),//1 Zona win Amarillo 
+        new Coordenadas(290, 247),//2 Zona win Azul
+        new Coordenadas(211, 245),//3 Zona win Verde
+    };
+    //Método para obtenner las casillas
+
+    //Recorrido principal
     public int getCasillas() {
         return recorrido.length;
-    }//fin del metodo
-;
-    //Metodo para avanzar por las casillas 
-    public void AvanzarFicha(){
-        if(indice < recorrido.length - 1 ){
-           indice ++;
-        }//fin del else
-    }//fin del metodo 
-    
-    //metodo para reiniciar el juego
-    public void reiniciar(){
-        indice = 0;
-    }//fin del metodo
+    }//fin del metodo getCasillas
+    //Método obtener las posiciones
+
+    //Dibuja la posicion de la ficha
+    public Coordenadas getPosicion(int indiceGeneral) {
+        return recorrido[indiceGeneral];
+    }//fin del método getPosicion
+
+    //Método para caminar o avanzar en el camino a win de cada color
+    public Coordenadas getCaminoWin(int colorId, int step) {
+        return caminoWin[colorId][step];
+    }// fin del método getCaminoWin
+
+    //Lee el tamaño y avanza según caminoWin
+    public int getAvanzarFichaWin(int colorId) {
+        return caminoWin[colorId].length;
+    }//fin del método avanzarFicha
+
+    //Método de meta según el color de la ficha
+    public Coordenadas getMetas(int colorId) {
+        return metas[colorId];
+    }//fin del método getMetas
 
 }//fin del arrelgo y metodos 

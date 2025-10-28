@@ -4,6 +4,9 @@
  */
 package view;
 
+import javax.swing.JLabel;
+import model.TableroCoordenadas;
+
 /**
  *
  * @author ellio
@@ -13,9 +16,31 @@ public class PanelTablero extends javax.swing.JPanel {
     /**
      * Creates new form PanelTablero
      */
+    private TableroCoordenadas tablero;
+
     public PanelTablero() {
         initComponents();
     }//fin del constructor
+
+    public JLabel getImgFichaAmarillo() {
+        return imgFichaAmarillo;
+    }
+
+    public JLabel getImgFichaAzul() {
+        return imgFichaAzul;
+    }
+
+    public JLabel getImgFichaRoja() {
+        return imgFichaRoja;
+    }
+
+    public JLabel getImgFichaVerde() {
+        return imgFichaVerde;
+    }
+
+    public void setTablero(TableroCoordenadas tablero) {
+        this.tablero = tablero;
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -54,6 +79,27 @@ public class PanelTablero extends javax.swing.JPanel {
         add(imgTablero);
         imgTablero.setBounds(0, 32, 500, 500);
     }// </editor-fold>//GEN-END:initComponents
+    public void moverFicha(int colorId, int x, int y) {
+        JLabel lbl = labelJugador(colorId);
+        if (lbl != null) {
+            lbl.setLocation(x, y);
+            lbl.repaint();
+            this.repaint();
+        }
+    }
+
+    public JLabel labelJugador(int colorId) {
+        if (colorId == 0) {
+            return imgFichaRoja;
+        }
+        if (colorId == 1) {
+            return imgFichaAmarillo;
+        }
+        if (colorId == 2) {
+            return imgFichaAzul;
+        }
+        return imgFichaVerde;//3 verde
+    }
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
