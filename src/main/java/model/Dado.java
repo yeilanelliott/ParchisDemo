@@ -25,7 +25,9 @@ public class Dado {
     //Metodos
     public int dadosAleatorios(){
         numero = random.nextInt(6)+1; //minimo el numero  que lleva el + y el maximo el numero ()
+        System.out.println("Sacó:"+numero);
         return numero;
+        
     };
     
    

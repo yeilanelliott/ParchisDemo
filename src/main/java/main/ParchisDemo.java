@@ -14,7 +14,7 @@ import view.GUIInicio;
 public class ParchisDemo {
 
     public static void main(String[] args) {
-        //importo la clase GUIInicio y GUIJuego
+        //importo la clase GUIInicio 
         GUIInicio v1 = new GUIInicio();
         
         //Metodo para visualizar el diiseño de la clase

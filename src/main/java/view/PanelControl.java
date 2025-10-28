@@ -4,22 +4,42 @@
  */
 package view;
 
-
+import javax.swing.JButton;
 
 /**
  *
  * @author ellio
  */
 public class PanelControl extends javax.swing.JPanel {
-    
 
     /**
      * Creates new form PanelTablero
      */
     public PanelControl() {
         initComponents();
-        
-        
+
+    }
+    // --- GETTERS para que el controlador se suscriba a los botones ---
+
+    public JButton getBtnDado() {
+        return btnDado;
+    }
+
+    public JButton getBtnMenu() {
+        return btnMenu;
+    }
+
+    public JButton getBtnReinicio() {
+        return btnReinicio;
+    }
+
+// --- SETTERS prácticos para mostrar info ---
+    public void setNumeroDado(int valor) {
+        lblNumeroDado.setText("Numero dado: " + valor);
+    }
+
+    public void setTextoTurno(String texto) {
+        lblFichaTurno.setText("Ficha turno: " + texto);
     }
 
     /**
@@ -40,7 +60,7 @@ public class PanelControl extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblNumeroDado.setText("Numero dado:");
-        add(lblNumeroDado, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, -1, -1));
+        add(lblNumeroDado, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 170, 140, -1));
 
         btnDado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImágenesProyectoFinal/DadoPF.png"))); // NOI18N
         btnDado.setBorderPainted(false);
@@ -49,7 +69,7 @@ public class PanelControl extends javax.swing.JPanel {
                 btnDadoActionPerformed(evt);
             }
         });
-        add(btnDado, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 30, 139, 140));
+        add(btnDado, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 139, 140));
 
         btnReinicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImágenesProyectoFinal/ReinicioProyectoFinal.png"))); // NOI18N
         btnReinicio.setBorderPainted(false);
@@ -58,7 +78,7 @@ public class PanelControl extends javax.swing.JPanel {
                 btnReinicioActionPerformed(evt);
             }
         });
-        add(btnReinicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 40, 100, 100));
+        add(btnReinicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 40, 100, 100));
 
         btnMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImágenesProyectoFinal/MenuPF.png"))); // NOI18N
         btnMenu.setBorderPainted(false);
@@ -67,10 +87,10 @@ public class PanelControl extends javax.swing.JPanel {
                 btnMenuActionPerformed(evt);
             }
         });
-        add(btnMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 100, 100));
+        add(btnMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 100, 100));
 
         lblFichaTurno.setText("Ficha turno:");
-        add(lblFichaTurno, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, 72, -1));
+        add(lblFichaTurno, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 170, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
@@ -82,12 +102,12 @@ public class PanelControl extends javax.swing.JPanel {
 
     private void btnDadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDadoActionPerformed
         // TODO add your handling code here:
-        
+
     }//GEN-LAST:event_btnDadoActionPerformed
 
     private void btnReinicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReinicioActionPerformed
         // TODO add your handling code here:
-        
+
     }//GEN-LAST:event_btnReinicioActionPerformed
 
 

@@ -84,10 +84,10 @@ public class TableroCoordenadas {
         
     };
     
-    private int salida_amarillo = 5;
-    private int salida_azul = 22;
-    private int salida_rojo = 39;
-    private int salida_verde = 56;
+    private int salidaAmarillo = 5;
+    private int salidaAzul = 22;
+    private int salidaRojo = 39;
+    private int salidaVerde = 56;
 
     //Metodo obtener las posiciones
     public Coordenadas getPosicion(int indice) {

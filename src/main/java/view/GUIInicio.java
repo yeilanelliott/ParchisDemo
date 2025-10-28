@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package view;
-
 import view.GUIJuego;
 
 /**
@@ -11,8 +10,6 @@ import view.GUIJuego;
  * @author ellio
  */
 public class GUIInicio extends javax.swing.JFrame {
-    
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(GUIInicio.class.getName());
 
     /**
      * Creates new form GUIInicio
@@ -34,7 +31,7 @@ public class GUIInicio extends javax.swing.JFrame {
         btnCreditos = new javax.swing.JButton();
         btnInstrucciones = new javax.swing.JButton();
         btnHistroia = new javax.swing.JButton();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        comboColor = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
         imgFondo = new javax.swing.JLabel();
 
@@ -75,15 +72,15 @@ public class GUIInicio extends javax.swing.JFrame {
         btnHistroia.setText("Historia");
         getContentPane().add(btnHistroia, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 450, 110, 30));
 
-        jComboBox1.setBackground(new java.awt.Color(29, 47, 93));
-        jComboBox1.setForeground(new java.awt.Color(255, 255, 255));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "verde", "azul", "amarrilo", "rojo" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        comboColor.setBackground(new java.awt.Color(29, 47, 93));
+        comboColor.setForeground(new java.awt.Color(255, 255, 255));
+        comboColor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Rojo", "Amarillo", "Azul", "Verde" }));
+        comboColor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                comboColorActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 300, 90, 20));
+        getContentPane().add(comboColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 300, 90, 20));
 
         jLabel1.setBackground(new java.awt.Color(29, 47, 93));
         jLabel1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
@@ -106,25 +103,28 @@ public class GUIInicio extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnInstruccionesActionPerformed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void comboColorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboColorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_comboColorActionPerformed
 
     private void btnJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJugarActionPerformed
-        // TODO add your handling code here:
+
         GUIJuego v2 = new GUIJuego();
+
+        v2.setLocationRelativeTo(this);
         v2.setVisible(true);
-        v2.setLocationRelativeTo(v2);
+
+        this.dispose();
     }//GEN-LAST:event_btnJugarActionPerformed
 
-  
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCreditos;
     private javax.swing.JButton btnHistroia;
     private javax.swing.JButton btnInstrucciones;
     private javax.swing.JButton btnJugar;
+    private javax.swing.JComboBox<String> comboColor;
     private javax.swing.JLabel imgFondo;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

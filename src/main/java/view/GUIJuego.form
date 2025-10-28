@@ -25,17 +25,17 @@
     <Property name="useNullLayout" type="boolean" value="false"/>
   </Layout>
   <SubComponents>
-    <Component class="view.PanelTablero" name="panelTablero1">
+    <Component class="view.PanelTablero" name="panelTablero">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="10" y="10" width="530" height="530"/>
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="view.PanelControl" name="panelControl2">
+    <Component class="view.PanelControl" name="panelControl">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="60" y="550" width="-1" height="-1"/>
+          <AbsoluteConstraints x="0" y="550" width="550" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>

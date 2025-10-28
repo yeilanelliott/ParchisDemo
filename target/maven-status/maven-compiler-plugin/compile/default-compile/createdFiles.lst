@@ -3,11 +3,11 @@ model\CoordenadasHome.class
 model\TableroCoordenadas.class
 view\GUIInicio$3.class
 view\PanelControl$1.class
+model\Ficha.class
 view\PanelControl$3.class
 main\ParchisDemo.class
 model\Dado.class
 view\GUIJuego.class
-view\PanelTablero$1.class
 view\GUIInicio$2.class
 view\GUIInicio$4.class
 view\GUIInicio.class
