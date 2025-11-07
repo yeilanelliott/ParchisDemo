@@ -15,20 +15,22 @@ public class Dado {
     //Atributos 
     private Random random;
     private int numero;
-    private CoordenadasHome home;
 
     //Constructor
     public Dado(Random random, int numero) {
-        this.random = random;
-        this.numero = numero;
+        this.random = random;//variable del parametro
+        this.numero = numero;//variable del parametro
     }
 
-    //Metodos
+    //Métodos
     public int dadosAleatorios() {
         numero = random.nextInt(6) + 1; //minimo el numero  que lleva el + y el maximo el numero ()
-        System.out.println("Sacó:" + numero);
         return numero;
     }
-;
+
+    //Nuevo
+    public int getDado() {
+        return numero;
+    }
 
 }//fin del metodo

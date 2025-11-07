@@ -12,12 +12,12 @@ public class TableroCoordenadas {
 
     //Arreglo
     private Coordenadas[] recorrido = new Coordenadas[]{
-        new Coordenadas(305, 476),//1
-        new Coordenadas(305, 454),//2
-        new Coordenadas(305, 432),//3
-        new Coordenadas(305, 409),//4
-        new Coordenadas(305, 381),//5 AMARRILLO
-        new Coordenadas(305, 359),//6
+        new Coordenadas(305, 476),//1 = indice 0
+        new Coordenadas(305, 454),//2 = indice 1
+        new Coordenadas(305, 432),//3 = indice 2
+        new Coordenadas(305, 409),//4 = indice 3
+        new Coordenadas(305, 381),//5 AMARRILLO --4
+        new Coordenadas(305, 359),//6 = indice 5
         new Coordenadas(305, 336),//7
         new Coordenadas(305, 314),//8
         new Coordenadas(316, 295),//9
@@ -33,7 +33,7 @@ public class TableroCoordenadas {
         new Coordenadas(459, 187),//19
         new Coordenadas(435, 187),//20
         new Coordenadas(411, 187),//21
-        new Coordenadas(388, 188),//22 AZUL
+        new Coordenadas(388, 188),//22 AZUL -- indice = 21
         new Coordenadas(364, 187),//23
         new Coordenadas(342, 187),//24
         new Coordenadas(317, 187),//25
@@ -50,7 +50,7 @@ public class TableroCoordenadas {
         new Coordenadas(191, 39),//36
         new Coordenadas(191, 62),//37
         new Coordenadas(191, 84),//38
-        new Coordenadas(196, 106),//39 ROJO
+        new Coordenadas(196, 106),//39 ROJO -- indice = 38
         new Coordenadas(191, 132),//40
         new Coordenadas(193, 154),//41
         new Coordenadas(196, 174),//42
@@ -67,7 +67,7 @@ public class TableroCoordenadas {
         new Coordenadas(40, 315),//53
         new Coordenadas(64, 315),//54
         new Coordenadas(88, 315),//55
-        new Coordenadas(111, 315),//56 VERDE
+        new Coordenadas(111, 315),//56 VERDE -- indice =55
         new Coordenadas(135, 315),//57
         new Coordenadas(157, 315),//58
         new Coordenadas(181, 294),//59

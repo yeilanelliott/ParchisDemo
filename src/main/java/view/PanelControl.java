@@ -5,6 +5,7 @@
 package view;
 
 import javax.swing.JButton;
+import javax.swing.JLabel;
 
 /**
  *
@@ -34,10 +35,12 @@ public class PanelControl extends javax.swing.JPanel {
     }
 
 // --- SETTERS prácticos para mostrar info ---
+    //Se modifica el set para recibir el valor del dado
     public void setNumeroDado(int valor) {
         lblNumeroDado.setText("Numero dado: " + valor);
     }
-
+    //FichaTurno
+    //Se modifica el set para recibir el color de la ficha que juega
     public void setTextoTurno(String texto) {
         lblFichaTurno.setText("Ficha turno: " + texto);
     }
