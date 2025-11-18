@@ -4,6 +4,9 @@
  */
 package view;
 
+import javax.swing.JButton;
+import javax.swing.JLabel;
+
 
 
 /**
@@ -18,9 +21,39 @@ public class PanelControl extends javax.swing.JPanel {
      */
     public PanelControl() {
         initComponents();
-        
+    }
+
+    public JButton getBtnDado() {
+        return btnDado;
+    }
+
+    public JButton getBtnReinicio() {
+        return btnReinicio;
+    }
+
+    public void setLblFichaTurno(String texto) {
+        lblFichaTurno.setText("Ficha turno "+texto);
+    }
+
+    public void setLblNumeroDado(int valor) {
+        lblNumeroDado.setText("Numero dado: "+ valor);
+    }
+
+    public void setTxtPuntosJugador(int valor) {
+        txtPuntosJugador.setText("Puntos Jugador: "+valor);
+    }
+
+    public void setTxtPuntosOponente(int valor) {
+        txtPuntosOponente.setText("Puntos Oponente: "+valor);
+    }
+
+    public void setTxtTiempo(int valor) {
+        txtTiempo.setText("Tiempo: "+valor);
         
     }
+    
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -36,6 +69,9 @@ public class PanelControl extends javax.swing.JPanel {
         btnReinicio = new javax.swing.JButton();
         btnMenu = new javax.swing.JButton();
         lblFichaTurno = new javax.swing.JLabel();
+        txtPuntosJugador = new javax.swing.JLabel();
+        txtPuntosOponente = new javax.swing.JLabel();
+        txtTiempo = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -71,6 +107,15 @@ public class PanelControl extends javax.swing.JPanel {
 
         lblFichaTurno.setText("Ficha turno:");
         add(lblFichaTurno, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, 72, -1));
+
+        txtPuntosJugador.setText("Puntos:");
+        add(txtPuntosJugador, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 70, -1));
+
+        txtPuntosOponente.setText("Puntos Oponente:");
+        add(txtPuntosOponente, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 110, -1));
+
+        txtTiempo.setText("Tiempo:");
+        add(txtTiempo, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
@@ -97,5 +142,8 @@ public class PanelControl extends javax.swing.JPanel {
     private javax.swing.JButton btnReinicio;
     private javax.swing.JLabel lblFichaTurno;
     private javax.swing.JLabel lblNumeroDado;
+    private javax.swing.JLabel txtPuntosJugador;
+    private javax.swing.JLabel txtPuntosOponente;
+    private javax.swing.JLabel txtTiempo;
     // End of variables declaration//GEN-END:variables
 }

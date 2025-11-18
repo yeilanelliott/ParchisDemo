@@ -1,0 +1,36 @@
+new Coordenadas(251 , 454),//1 Zona win Amarillo 
+new Coordenadas(251 , 430),//2 Zona win Amarillo 
+new Coordenadas(251 , 409),//3 Zona win Amarillo 
+new Coordenadas(251 , 385),//4 Zona win Amarillo 
+new Coordenadas(251 , 360),//5 Zona win Amarillo 
+new Coordenadas(251 , 338),//6 Zona win Amarillo 
+new Coordenadas(251 , 317),//7 Zona win Amarillo 
+new Coordenadas(251 , 289),//8 Zona win Amarillo 
+
+new Coordenadas(459 , 247),//1 Zona win Azul 
+new Coordenadas(435 , 247),//2 Zona win Azul 
+new Coordenadas(413 , 247),//3 Zona win Azul 
+new Coordenadas(387 , 247),//4 Zona win Azul 
+new Coordenadas(364 , 247),//5 Zona win Azul 
+new Coordenadas(343 , 247),//6 Zona win Azul 
+new Coordenadas(316 , 247),//7 Zona win Azul 
+new Coordenadas(290 , 247),//8 Zona win Azul 
+
+new Coordenadas(250 , 39),//1 Zona win Rojo
+new Coordenadas(250 , 62),//2 Zona win Rojo 
+new Coordenadas(250 , 84),//3 Zona win Rojo 
+new Coordenadas(250 , 108),//4 Zona win Rojo 
+new Coordenadas(250 , 132),//5 Zona win Rojo 
+new Coordenadas(250 , 154),//6 Zona win Rojo 
+new Coordenadas(250 , 179),//7 Zona win Rojo 
+new Coordenadas(250 , 212),//8 Zona win Rojo 
+
+new Coordenadas(40 , 245),//1 Zona win Verde
+new Coordenadas(67 , 245),//1 Zona win Verde
+new Coordenadas(89 , 245),//1 Zona win Verde
+new Coordenadas(112 , 245),//1 Zona win Verde
+new Coordenadas(135 , 245),//1 Zona win Verde
+new Coordenadas(157 , 245),//1 Zona win Verde
+new Coordenadas(184 , 245),//1 Zona win Verde
+new Coordenadas(211 , 245),//1 Zona win Verde
+

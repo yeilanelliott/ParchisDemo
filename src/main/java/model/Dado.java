@@ -13,19 +13,15 @@ import java.util.Random;
 public class Dado {
     //Atributos 
     private Random random;
-    private int numero;
-    private CoordenadasHome home;
     
     //Constructor
-    public Dado(Random random, int numero) {
-        this.random = random;
-        this.numero = numero;
+    public Dado() {
+        this.random = new Random();
     }
     
     //Metodos
     public int dadosAleatorios(){
-        numero = random.nextInt(6)+1; //minimo el numero  que lleva el + y el maximo el numero ()
-        return numero;
+        return random.nextInt(6)+1; //minimo el numero  que lleva el + y el maximo el numero ()
     };
     
    

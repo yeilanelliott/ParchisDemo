@@ -18,9 +18,6 @@ public class Coordenadas {
         this.y = y;
     }//fin del constructor
 
-    Coordenadas() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
     
     //Getters
     public int getX() {
