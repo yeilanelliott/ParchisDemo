@@ -4,6 +4,8 @@
  */
 package view;
 
+import controller.ControladorJuego;
+
 /**
  *
  * @author ellio
@@ -15,9 +17,12 @@ public class GUIJuego extends javax.swing.JFrame {
     /**
      * Creates new form GUIJuego
      */
-    public GUIJuego() {
+    public GUIJuego(ControladorJuego control) {
         initComponents();
+        control.conectarVistas(panelControl1, panelTablero1);
+        setLocationRelativeTo(null);
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -28,18 +33,13 @@ public class GUIJuego extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        panelTablero1 = new view.PanelTablero();
+        panelControl1 = new view.PanelControl();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(panelTablero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 530, 530));
+        getContentPane().add(panelControl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 550, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -47,5 +47,15 @@ public class GUIJuego extends javax.swing.JFrame {
  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private view.PanelControl panelControl1;
+    private view.PanelTablero panelTablero1;
     // End of variables declaration//GEN-END:variables
+
+    public PanelControl getPanelControl1() {
+        return panelControl1;
+    }
+
+    public PanelTablero getPanelTablero1() {
+        return panelTablero1;
+    }
 }
