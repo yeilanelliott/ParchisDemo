@@ -109,10 +109,10 @@ public class PanelControl extends javax.swing.JPanel {
         add(lblFichaTurno, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, 72, -1));
 
         txtPuntosJugador.setText("Puntos:");
-        add(txtPuntosJugador, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 70, -1));
+        add(txtPuntosJugador, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 90, -1));
 
         txtPuntosOponente.setText("Puntos Oponente:");
-        add(txtPuntosOponente, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 110, -1));
+        add(txtPuntosOponente, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 120, 20));
 
         txtTiempo.setText("Tiempo:");
         add(txtTiempo, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, -1, -1));
