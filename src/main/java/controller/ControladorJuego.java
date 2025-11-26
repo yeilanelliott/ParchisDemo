@@ -64,7 +64,7 @@ public class ControladorJuego implements ActionListener {
         } else if (colorId > 3) {
             colorJugadorId = 3;
         } else {
-            colorId = colorJugadorId;
+            colorJugadorId = colorId;
         }
         colorOponenteId = emparejarColor(colorJugadorId);
 
